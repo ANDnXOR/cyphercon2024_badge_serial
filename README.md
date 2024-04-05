@@ -2,3 +2,5 @@
 Reverse engineering the badge serial protocol
 
 hyr0n likes emacs.
+
+i do not
