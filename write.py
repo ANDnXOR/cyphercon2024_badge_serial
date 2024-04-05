@@ -26,7 +26,7 @@ ser.write(id12)
 ser.write(hex(1))
 
 # COMPUTE CRC and write to serial
-ser.write('aa')
+ser.write('aa') ##this shouldnt be aa im just fat fingering it until we actually compute CRC
 
 while True:
     result = ser.read(1)
