@@ -9,6 +9,16 @@ ser = serial.Serial('/dev/ttyUSB0', baudrate=9600)
 # b'53' b'4e' b'44' b'4e' b'21' b'14' b'00' b'03' b'11' b'01' b'00' b'10' b'73' 
 # b'53' b'4e' b'44' b'4e' b'21' b'01' b'00' b'04' b'10' b'14' b'00' b'11' b'72' 
 
+header = bytearray([0x53,0x4e,0x44,0x4e,0x21])
+badge_id = bytearray([0xff,0x00])
+crc = bytearray
+
+# This should write the first packet
+ser.write(header)
+ser.write(badge_id)
+ser.write(0x01)
+ser.write(0xAA)
+
 id11 = hex(1) #set this in code
 id12 = hex(0) #set this in code
 thing1 = hex(11) #set this in code
