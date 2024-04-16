@@ -21,6 +21,7 @@ inside the firmware file you will find a line such as `:020000005200ac` replace 
 
 # Badge ID Ranges
 |range|type|value|
+|---|---|---|
 |0 - 537|general|10|
 |538 - 613|VIP|20|
 |614 - 699|Speaker|100|
