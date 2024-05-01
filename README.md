@@ -17,7 +17,7 @@ Gigawatts Likes VIM
 |badge3.py|spams a csv list of badge ids to a badge|python3 badge3.py --delay 500 'serialport' '1,2,3'|
 |badge_trade7.py|spoofs trades to make a badge green|python3 badge_trade7.py --port 'serialport' --local_id 11 --local_item=23|
 |badge_checksum.py|calculates the badge checksum for the firmware files|use output in .hex file|
-|badge_info.py|Prints out your badge's ID, Type and Item number|python badge_info.py --port 'serialport'
+|badge_info.py|Prints out your badge's ID, Type and Item number|python3 badge_info.py --port 'serialport'
 
 # badge firmware
 inside the firmware file you will find a line such as `:020000005200ac` replace that line with the output of the badge_checksum.py file, you can write the badge firmware with pickitminus and a clone pickit 3 or pickit 3.5. This allows you to set a badge ID
